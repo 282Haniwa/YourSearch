@@ -6,6 +6,10 @@
     margin: 16px;
 }
 
+.add-field {
+    margin: 0;
+}
+
 .list-item {
     font-size: 1.25em;
     display: flex;

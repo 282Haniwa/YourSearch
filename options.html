@@ -11,33 +11,47 @@
 </head>
 <body>
     <nav>
-        <div class="nav-wrapper green">
-            <div class="title brand-logo left">オプション</div>
+        <div class="nav-wrapper orange">
+            <div class="brand-logo left title">オプション</div>
         </div>
     </nav>
     <div class="content">
         <div class="row s12">
-            <div class="black-list-wrapper col s6">
+            <div class="col s6 black-list-wrapper">
                 <h5>ブラックリスト</h5>
-                <ul class="black-list collection">
+                <form class="row s12">
+                    <div class="input-field col s10 add-field">
+                        <input type="text" name="add-black-list">
+                        <label for="add-black-list">ブラックリスト</label>
+                    </div>
+                    <button class="btn waves-effect orange">追加</button>
+                </form>
+                <ul class="collection black-list">
                     <li class="collection-item list-item">
                         <div>chiebukuro.yahoo.co.jp</div>
-                        <button class="delete-button btn-floating btn-flat waves-effect">
-                            <i class="material-icons red-text lighten-2">delete</i>
+                        <button class="btn-floating btn-flat waves-effect delete-button">
+                            <i class="material-icons grey-text">delete</i>
                         </button>
                     </li>
                 </ul>
             </div>
-            <div class="alias-list-wrapper col s6">
+            <div class="col s6 alias-list-wrapper">
                 <h5>エイリアスリスト</h5>
-                <ul class="alias-list collection">
+                <form class="row s12">
+                    <div class="input-field col s10 add-field">
+                        <input type="text" name="add-alias-list">
+                        <label for="add-alias-list">エイリアスリスト</label>
+                    </div>
+                    <button class="btn waves-effect orange">追加</button>
+                </form>
+                <ul class="collection alias-list">
                     <li class="collection-item list-item">
                         <div class="alias-item">
                             <div class="alias-word">mdn</div>
                             <div class="alias-target">site:developer.mozilla.org</div>
                         </div>
-                        <button class="delete-button btn-floating btn-flat waves-effect">
-                            <i class="material-icons red-text">delete</i>
+                        <button class="btn-floating btn-flat waves-effect delete-button">
+                            <i class="material-icons grey-text">delete</i>
                         </button>
                     </li>
                     <li class="collection-item list-item">
@@ -45,8 +59,8 @@
                             <div class="alias-word">js</div>
                             <div class="alias-target">javascript</div>
                         </div>
-                        <button class="delete-button btn-floating btn-flat waves-effect">
-                            <i class="material-icons red-text">delete</i>
+                        <button class="btn-floating btn-flat waves-effect delete-button">
+                            <i class="material-icons grey-text">delete</i>
                         </button>
                     </li>
                 </ul>
