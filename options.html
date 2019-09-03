@@ -19,16 +19,16 @@
         <div class="row s12">
             <div class="col s6 black-list-wrapper">
                 <h5>ブラックリスト</h5>
-                <form class="row s12">
+                <form id="add-black-list-form" class="row s12">
                     <div class="input-field col s10 add-field">
-                        <input type="text" name="add-black-list" placeholder="ブラックリスト">
+                        <input id="add-black-list-input" type="text" name="add-black-list" placeholder="ブラックリスト">
                     </div>
                     <button class="btn waves-effect orange">追加</button>
                 </form>
                 <ul class="collection black-list">
                     <li class="collection-item list-item">
                         <div>chiebukuro.yahoo.co.jp</div>
-                        <button class="btn-floating btn-flat waves-effect delete-button">
+                        <button type="button" class="btn-floating btn-flat waves-effect delete-button">
                             <i class="material-icons grey-text">delete</i>
                         </button>
                     </li>
@@ -36,9 +36,9 @@
             </div>
             <div class="col s6 alias-list-wrapper">
                 <h5>エイリアスリスト</h5>
-                <form class="row s12">
+                <form id="add-alias-list-form" class="row s12">
                     <div class="input-field col s10 add-field">
-                        <input type="text" name="add-alias-list" placeholder="エイリアスリスト">
+                        <input id="add-alias-list-input" type="text" name="add-alias-list" placeholder="エイリアスリスト">
                     </div>
                     <button class="btn waves-effect orange">追加</button>
                 </form>
@@ -48,7 +48,7 @@
                             <div class="alias-word">mdn</div>
                             <div class="alias-target">site:developer.mozilla.org</div>
                         </div>
-                        <button class="btn-floating btn-flat waves-effect delete-button">
+                        <button type="button" class="btn-floating btn-flat waves-effect delete-button">
                             <i class="material-icons grey-text">delete</i>
                         </button>
                     </li>
@@ -57,7 +57,7 @@
                             <div class="alias-word">js</div>
                             <div class="alias-target">javascript</div>
                         </div>
-                        <button class="btn-floating btn-flat waves-effect delete-button">
+                        <button type="button" class="btn-floating btn-flat waves-effect delete-button">
                             <i class="material-icons grey-text">delete</i>
                         </button>
                     </li>
@@ -65,5 +65,6 @@
             </div>
         </div>
     </div>
+    <script src="js/options-event.js"></script>
 </body>
 </html>

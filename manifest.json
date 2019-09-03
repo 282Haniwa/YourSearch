@@ -3,7 +3,8 @@
     "description": "Your own search field.",
     "version": "1.0",
     "permissions": [
-        "activeTab"
+        "storage",
+        "unlimitedStorage"
     ],
     "background": {
         "scripts": [
