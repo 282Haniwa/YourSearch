@@ -1,0 +1,28 @@
+.title {
+    margin-left: 16px;
+}
+
+.content {
+    margin: 16px;
+}
+
+.list-item {
+    font-size: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alias-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alias-word {
+    width: 100px;
+}
+
+.delete-button:hover {
+    background-color: #e0e0e0;
+}

@@ -4,23 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/options.css">
     <title>Your Search Options</title>
 </head>
 <body>
-    <div class="content">
-        <h4>オプション</h4>
-        <div class="black-list-wrapper">
-            <h5>ブラックリスト</h5>
-            <ul class="black-list collection">
-                <li class="collection-item">chiebukuro.yahoo.co.jp</li>
-            </ul>
+    <nav>
+        <div class="nav-wrapper green">
+            <div class="title brand-logo left">オプション</div>
         </div>
-        <div class="alias-list-wrapper">
-            <h5>エイリアスリスト</h5>
-            <ul class="alias-list collection">
-            
-            </ul>
+    </nav>
+    <div class="content">
+        <div class="row s12">
+            <div class="black-list-wrapper col s6">
+                <h5>ブラックリスト</h5>
+                <ul class="black-list collection">
+                    <li class="collection-item list-item">
+                        <div>chiebukuro.yahoo.co.jp</div>
+                        <button class="delete-button btn-floating btn-flat waves-effect">
+                            <i class="material-icons red-text lighten-2">delete</i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="alias-list-wrapper col s6">
+                <h5>エイリアスリスト</h5>
+                <ul class="alias-list collection">
+                    <li class="collection-item list-item">
+                        <div class="alias-item">
+                            <div class="alias-word">mdn</div>
+                            <div class="alias-target">site:developer.mozilla.org</div>
+                        </div>
+                        <button class="delete-button btn-floating btn-flat waves-effect">
+                            <i class="material-icons red-text">delete</i>
+                        </button>
+                    </li>
+                    <li class="collection-item list-item">
+                        <div class="alias-item">
+                            <div class="alias-word">js</div>
+                            <div class="alias-target">javascript</div>
+                        </div>
+                        <button class="delete-button btn-floating btn-flat waves-effect">
+                            <i class="material-icons red-text">delete</i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
