@@ -10,7 +10,6 @@
     let searchString = inputString
     aliasList.forEach(item => {
       searchString = searchString.replace(item.alias, item.target)
-      console.log(searchString, item)
     })
     blackList.forEach(item => {
       searchString = `${searchString} -${item}`
@@ -27,9 +26,7 @@
   const handleSearch = event => {
     event.preventDefault()
     const searchString = convertSearchString(searchInputElement.value)
-    console.log(searchString)
     searchInputElement.value = ''
-    console.log(buildURL(searchString))
     window.open(buildURL(searchString), '_blank')
   }
 
